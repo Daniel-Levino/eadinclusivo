@@ -3,4 +3,5 @@ module.exports = function (app) {
 
     app.route('/mensagens')
     .get(mensagensController.listAll)
+    .post(mensagensController.createOne)
 }

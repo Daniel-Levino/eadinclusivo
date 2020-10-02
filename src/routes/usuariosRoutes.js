@@ -3,4 +3,5 @@ module.exports = function (app) {
 
     app.route('/usuarios')
     .get(usuariosController.listAll)
+    .post(usuariosController.createOne)
 }

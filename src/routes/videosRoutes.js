@@ -3,4 +3,5 @@ module.exports = function (app) {
 
     app.route('/videos')
     .get(videosController.listAll)
+    .post(videosController.createOne)
 }
