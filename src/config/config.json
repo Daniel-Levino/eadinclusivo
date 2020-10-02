@@ -1,0 +1,14 @@
+{
+  "development": {
+    "storage": "eadi.sqlite3",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "storage": "eadi.sqlite3",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "storage": "eadi.sqlite3",
+    "dialect": "sqlite"
+  }
+}

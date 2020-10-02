@@ -5,9 +5,15 @@ const app = express()
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
-const usuarioRoutes = require('./src/routes/usuarioRoutes.js')
+const usuariosRoutes = require('./src/routes/usuariosRoutes.js')
+const cursosRoutes = require('./src/routes/cursosRoutes.js')
+const videosRoutes = require('./src/routes/videosRoutes.js')
+const mensagensRoutes = require('./src/routes/mensagensRoutes.js')
 
-usuarioRoutes(app)
+usuariosRoutes(app)
+cursosRoutes(app)
+videosRoutes(app)
+mensagensRoutes(app)
 
 app.route('/')
     .get((req, res) => {
